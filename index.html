@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Детская одежда премиум-класса с заботой о комфорте">
+    <title>LittleJoy | Магазин детской одежды</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Хедер с навигацией -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Логотип с текстом -->
+            <div class="logo-wrapper">
+                <img src="images/logo-placeholder.jpg" 
+                     alt="Детский логотип" 
+                     class="brand-logo"
+                     width="60"
+                     height="60">
+                <span class="brand-name">LittleJoy</span>
+            </div>
+
+            <!-- Главное меню -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <span class="link-icon">🏠</span>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#catalog" class="nav-link">
+                            <span class="link-icon">👗</span>
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <span class="link-icon">📖</span>
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">
+                            <span class="link-icon">📱</span>
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="cart-button">
+                            🛒 Корзина
+                            <span class="cart-counter">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <!-- Герой-секция с главным баннером -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="image-overlay"></div>
+            <img src="images/hero-placeholder.webp" 
+                 alt="Дети в красивой одежде" 
+                 class="hero-image"
+                 loading="lazy">
+        </div>
+        
+        <div class="hero-content">
+            <div class="text-wrapper">
+                <h2 class="hero-title">Одежда, которая радует детей</h2>
+                <p class="hero-subtitle">Экологичные материалы · Удобный крой · Яркие цвета</p>
+                <div class="cta-wrapper">
+                    <a href="#catalog" class="main-cta">Выбрать сейчас</a>
+                    <a href="#about" class="secondary-cta">Узнать больше</a>
+                </div>
+            </div>
+            
+            <div class="hero-features">
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <p>100% натуральные<br>материалы</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <p>Бесплатная доставка<br>от 3000₽</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👶</div>
+                    <p>Для детей<br>0-12 лет</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция каталога -->
+    <section id="catalog" class="catalog-section">
+        <div class="section-heading">
+            <h2>Новая коллекция</h2>
+            <div class="decorative-line"></div>
+        </div>
+
+        <div class="product-grid">
+            <!-- Карточка товара 1 -->
+            <article class="product-item">
+                <div class="product-thumbnail">
+                    <img src="images/product1-placeholder.webp" 
+                        alt="Детский зимний комплект" 
+                        class="product-image"
+                        loading="lazy">
+                    <div class="product-badge">Новинка</div>
+                </div>
+                <div class="product-details">
+                    <h3>Зимний комплект "Полярный"</h3>
+                    <div class="price-container">
+                        <span class="current-price">3 490 ₽</span>
+                        <span class="old-price">4 200 ₽</span>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </article>
+
+            <!-- Карточка товара 2 -->
+            <article class="product-item">
+                <div class="product-thumbnail">
+                    <img src="images/product2-placeholder.jpg" 
+                        alt="Платье для девочки" 
+                        class="product-image"
+                        loading="lazy">
+                </div>
+                <div class="product-details">
+                    <h3>Платье "Летний цветок"</h3>
+                    <div class="price-container">
+                        <span class="current-price">2 190 ₽</span>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </article>
+
+            <!-- Карточка товара 3 -->
+            <article class="product-item">
+                <div class="product-thumbnail">
+                    <img src="images/product3-placeholder.jpg" 
+                        alt="Спортивный костюм" 
+                        class="product-image"
+                        loading="lazy">
+                    <div class="product-badge">Хит продаж</div>
+                </div>
+                <div class="product-details">
+                    <h3>Спортивный костюм "Энергия"</h3>
+                    <div class="price-container">
+                        <span class="current-price">2 790 ₽</span>
+                    </div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+     <!-- Секция о компании -->
+     <section id="about" class="about-section">
+        <div class="about-wrapper">
+            <div class="about-image">
+                <img src="images/about-placeholderl.jpg" 
+                     alt="Наше производство" 
+                     class="about-photo"
+                     loading="lazy">
+            </div>
+            <div class="about-content">
+                <h2>О нашем магазине</h2>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">✅</div>
+                        <p>Сертифицированные материалы</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👕</div>
+                        <p>Более 500 моделей в коллекции</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👶</div>
+                        <p>Опыт работы с 2010 года</p>
+                    </div>
+                </div>
+                <p class="about-text">Мы создаем одежду, которая сочетает в себе комфорт, безопасность и современный дизайн. 
+                    Все изделия проходят многоэтапный контроль качества.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer id="contacts" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul class="contact-list">
+                    <li>📞 +7 (495) 123-45-67</li>
+                    <li>✉️ info@littlejoy.ru</li>
+                    <li>📍 Москва, ул. Детская, 15</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Часы работы</h4>
+                <p>Пн-Пт: 10:00 - 20:00<br>
+                Сб-Вс: 11:00 - 18:00</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Мы в соцсетях</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📹</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2025 LittleJoy. Все права защищены</p>
+        </div>
+    </footer>
+</body>
+</html>

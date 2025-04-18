@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - LittleJoy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Хедер с навигацией -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Логотип с текстом -->
+            <div class="logo-wrapper">
+                <img src="images/logo-placeholder.jpg" 
+                     alt="Детский логотип" 
+                     class="brand-logo"
+                     width="60"
+                     height="60">
+                <span class="brand-name">LittleJoy</span>
+            </div>
+
+            <!-- Главное меню -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <span class="link-icon">🏠</span>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#catalog" class="nav-link">
+                            <span class="link-icon">👗</span>
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <span class="link-icon">📖</span>
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">
+                            <span class="link-icon">📱</span>
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="cart-button">
+                            🛒 Корзина
+                            <span class="cart-counter">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Основной контент корзины -->
+    <main class="cart-main">
+        <div class="cart-container">
+            <h1 class="cart-title">Ваша корзина</h1>
+            
+            <!-- Список товаров -->
+            <div class="cart-items">
+                <!-- Товар 1 -->
+                <article class="cart-item">
+                    <img src="images/product1-placeholder.webp" 
+                         alt="Зимний комплект" 
+                         class="cart-item-image"
+                         loading="lazy">
+                    
+                    <div class="cart-item-info">
+                        <h3>Зимний комплект "Полярный"</h3>
+                        <div class="price-block">
+                            <span class="price">3 490 ₽</span>
+                            <span class="old-price">4 200 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="quantity-control">
+                        <button class="quantity-btn">−</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+
+                    <button class="remove-btn">×</button>
+                </article>
+
+                <!-- Товар 2 -->
+                <article class="cart-item">
+                    <img src="images/product3-placeholder.jpg" 
+                         alt="Спортивный костюм" 
+                         class="cart-item-image"
+                         loading="lazy">
+                    
+                    <div class="cart-item-info">
+                        <h3>Спортивный костюм "Энергия"</h3>
+                        <div class="price-block">
+                            <span class="price">2 790 ₽</span>
+                        </div>
+                    </div>
+
+                    <div class="quantity-control">
+                        <button class="quantity-btn">−</button>
+                        <span class="quantity">2</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+
+                    <button class="remove-btn">×</button>
+                </article>
+            </div>
+
+            <!-- Итоговая сумма -->
+            <div class="cart-summary">
+                <div class="total-block">
+                    <h3>Итого:</h3>
+                    <div class="total-price">
+                        <span class="label">Товары (3)</span>
+                        <span class="amount">6 280 ₽</span>
+                    </div>
+                    <a href="checkout.html" class="checkout-btn">Оформить заказ</a>
+                </div>
+            </div>
+
+            <!-- Пустая корзина (скрыто по умолчанию) -->
+            <!-- <div class="empty-cart">
+                <p>Ваша корзина пуста</p>
+                <a href="index.html" class="cta-button">Вернуться к покупкам</a>
+            </div> -->
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer id="contacts" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul class="contact-list">
+                    <li>📞 +7 (495) 123-45-67</li>
+                    <li>✉️ info@littlejoy.ru</li>
+                    <li>📍 Москва, ул. Детская, 15</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Часы работы</h4>
+                <p>Пн-Пт: 10:00 - 20:00<br>
+                Сб-Вс: 11:00 - 18:00</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Мы в соцсетях</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📹</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2025 LittleJoy. Все права защищены</p>
+        </div>
+    </footer>
+</body>
+</html>
